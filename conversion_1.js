@@ -33,8 +33,11 @@
 // let convetToString = String(stringNum)
 // console.log( typeof convetToString);
 
-let date = "33ab";
+// let date = "33ab";
 
-let  valueOfDate = Number(date);
-console.log(valueOfDate);
-console.log( typeof valueOfDate);
+// let valueOfDate = Number(date);
+// console.log(valueOfDate);
+// console.log( typeof valueOfDate);
+
+// console.log("3" + +3);
+console.log("a" < "b");
