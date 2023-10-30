@@ -1,4 +1,8 @@
-// let score = "33abc"; 
+// let score = 'sabir'; 
+// console.log(score);
+// let newScore = String(score);
+// console.log(newScore);
+// console.log(typeof newScore);
 //it typeOf is number but the value is NaN 
 
 //let score = null
@@ -17,7 +21,7 @@
  
 
 // convert boolean 
-// let isSingIn=1; true
+let isSingIn=11; 
 
 // let isSingIn=0; false
 
@@ -25,8 +29,8 @@
 
 // let isSingIn= "Dilip"; true
 
-// let isSingInNumber = Boolean(isSingIn);
-// console.log(isSingInNumber);
+let isSingInNumber = Boolean(isSingIn);
+console.log(isSingInNumber);
 
 // let stringNum = 33;
 
@@ -40,4 +44,4 @@
 // console.log( typeof valueOfDate);
 
 // console.log("3" + +3);
-console.log("a" < "b");
+// console.log("a" < "b");

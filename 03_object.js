@@ -11,18 +11,17 @@
 
  // How to dcalre Symbole in object
 
-  const mySymbl = Symbol("key1");
+//   const mySymbl = Symbol("key1");
 
  const UsOpen = {
     name: "dilip Kumar",
-    age : 18,
-    [mySymbl]:"key1",
+    age: 18,
     location: "Jharkahnd",
     email: "dilip1234@gmail.com",
     isLoggedIn:false,
     fisrtLogInDays: ["Wednesday", "Sanday"],
  }
- console.log(UsOpen);
+//  console.log(UsOpen);
 
 //  Object acces two tpye
   //  console.log(UsOpen.email);
@@ -31,10 +30,10 @@
 //   console.log(UsOpen[mySymbl]); // it is corret print 
 
   //How to Chnage the data 
-  
-  // UsOpen.email = "Dilip23google.com";
-  // console.log(UsOpen);
-  //  Object.freeze(UsOpen);
+  // Object.freeze(UsOpen.email);
+  UsOpen.email = "Dilip23google.com";
+  console.log(UsOpen);
+   Object.freeze(UsOpen);
   // UsOpen.luckyname = 7;
   //  console.log(UsOpen);
 
@@ -47,9 +46,9 @@
 
 //declare functon in object
 
-UsOpen.greeting = function(){
-    console.log("Hello Mr.");
-}
+// UsOpen.greeting = function(){
+//     console.log("Hello Mr.");
+// }
 
 // UsOpen.greetingYTwo = function(){
 //     console.log(`Helo mr. ${this.name}`);
@@ -72,3 +71,4 @@ UsOpen.greeting = function(){
 // console.log(EnterUser.Email);
 // console.log(EnterUser["name"]);
 // console.log(EnterUser[syml]);
+ 

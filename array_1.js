@@ -11,7 +11,7 @@ const arr2 = new Array(1,2,3,4);
 // console.log(myArray.unshift(10));
 
 // myArray.shift()
-// const myArray = [1,2,3,4,5,6,];
+const myArray = [1,2,3,4,5,6,];
 // console.log(myArray.includes(9));
 // console.log(myArray.fill(2,4));
 //  const arr3 = myArray.join(); // jion method it change to string
@@ -22,7 +22,7 @@ const arr2 = new Array(1,2,3,4);
 
 //  const arry = myArray.slice(1);
 //  console.log("arry ",arry)
-//  console.log(myArray);
+// //  console.log(myArray);
 
 
 // const fruits = ["papaya" ,"orange" , "mango" , "orange","lemon","lemon"];
@@ -32,13 +32,13 @@ const arr2 = new Array(1,2,3,4);
 
 
 
-//  const arry1 = myArray.splice(1,4);
-//  console.log("arry ",arry1)
-//  console.log("my orignal value", myArray);
+ const arry1 = myArray.splice(1,3);
+ console.log("arry ",arry1)
+ console.log("my orignal value", myArray);
 
 
-const arr = [1,4,5,6,7,8,3,4,6,7]
-console.log(arr.(10));
+// const arr = [1,4,5,6,7,8,3,4,6,7]
+// console.log(arr.(10));
  
 
 

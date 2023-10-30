@@ -1,0 +1,67 @@
+//we can find id and class using thid mehtod in conlose
+1. getElementById('text').id
+2.getElementById('text').className 
+
+//we can find the attribute using this method 
+1.getElementById('text').getAttribute('text')
+2.const data = document.getAttribute('text')
+ conlose.log(data.getAttribute('id')) // output is text 
+
+ //we can set any attribute in runtime using this mehtod
+ 1. setAttribute('class' , 'sub');
+ const data = document.setAttribute('text')
+ conlose.log(data.setAttribute('class' , 'sub'));
+
+ //we can set style in runtime 
+ // we can set any style 
+ 1.const data = document.getAttribute('text')
+ 2.conlose.log(data.getAttribute('id'))
+********************************************
+ // querySelector only selcet fisrt value
+ 1. console.log(document.querySelector('h2'));
+ 2.const selcet = document.querySelector('p');
+      console.log(selcet.innerHTML);
+
+ **********************************************     
+// if we can set oderlist and unoderlist
+ // console.log(document.querySelector('li').style.backgroundColor = 'red');
+     const myul = document.querySelector('ul');
+    console.log(myul);
+
+     const list = myul.querySelector('li');
+       console.log(list);
+       list.style.backgroundColor = 'red';
+       list.style.borderRadius = '30px';
+
+
+***************************************************
+// querySelectorAll this not array but same array tpye 
+const allListItems = document.querySelectorAll('li');
+
+allListItems.style.color = 'red'; // we can not do this type
+
+allListItems[0].style.color = 'red' // we can do this type if beacasue it will work nodelist tpye
+
+2.if we can selcet all value using forEach mehtod
+tempList.forEach(function(list) {
+    list.style.color  = 'red';
+})
+****************************************************
+//How we can find acces parent and child class
+ // if we can accses child class 
+<script>
+        const parent = document.querySelector('.parent');
+        console.log(parent);
+        console.log(parent.children[2].innerText);
+    </script>
+
+// how we can find child class value use loop
+1.  <script>
+        const parent = document.querySelector('.parent');
+        // console.log(parent);
+        // console.log(parent.children[2].innerText);
+
+        for(let i =0; i<parent.children.length;i++){
+            console.log(parent.children[i].innerHTML);
+        }
+    </script>    
