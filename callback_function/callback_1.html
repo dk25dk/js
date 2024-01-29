@@ -1,0 +1,25 @@
+<script>
+   const funA = (frind, callfrnd) => {
+      console.log(`i am busy right now. i am taking to ${frind}. i will call you back.`);
+      callfrnd();
+   }
+   const funB = () => {
+      console.log(`Hye what's up. i call back you`);
+   }
+   funA("Dilip", funB());
+
+
+</script>
+<!-- 
+<script>
+   function func(name, callback) {
+      console.log(`my name ${name}`);
+     callback();
+   }
+   function func1() {
+      console.log("ok this is youre name");
+   }
+   func("dilip", func1());
+
+
+</script> -->

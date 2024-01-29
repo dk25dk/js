@@ -1,0 +1,15 @@
+<script>
+    function greeting() {
+        let message = 'Hi';
+        console.log("oter")
+
+        return function sayHi() {
+            console.log(message);
+            console.log("inner")
+        }
+        sayHi();
+        console.log("inner 1")
+    }
+    let hi = greeting();
+    hi(); // still can access the message variable
+</script>

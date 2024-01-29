@@ -1,0 +1,45 @@
+<script>
+    let arrList = [{
+        fullName: "askah",
+        age: 30,
+        salary: 300000,
+    },
+
+    {
+        fullName: "askah",
+        age: 20,
+        salary: 400000,
+    },
+    {
+        fullName: "askah",
+        age: 40,
+        salary: 900000,
+    },
+    {
+        fullName: "askah",
+        age: 345,
+        salary: 800000,
+    },
+    {
+        fullName: "askah",
+        age: 56,
+        salary: 600000,
+    },
+    {
+        fullName: "askah",
+        age: 60,
+        salary: 500000,
+    },
+    ]
+
+    let newArrayList = arrList.map(function (input) {
+        return {
+            name: input.fullName,
+            salary: input.salary,
+            status: true
+            // Age: input.age,
+        }
+    })
+    console.log(newArrayList);
+    // to map array to different set of values --It will return new array
+</script>

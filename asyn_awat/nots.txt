@@ -1,0 +1,4 @@
+1.await
+The await keyword is used inside the async function to wait for the asynchronous operation.
+2.async
+//There’s a special syntax to work with promises in a more comfortable fashion, called “async/await”. It’s surprisingly easy to understand and use. and await are not keywords, but they are built-in JavaScript functions. The "async" mod

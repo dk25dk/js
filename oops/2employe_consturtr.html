@@ -1,0 +1,20 @@
+<script>
+    function Employee(name, yearOfJoin , loction){
+        let salary;
+
+        this.name = name;
+        this.yearOfJoin = yearOfJoin;
+        this.loction = loction;
+
+        this.getEmloyeeDetail = function(){
+            return `Name : ${this.name}, Join Year: ${this.yearOfJoin}, Location: ${this.loction}`;
+
+        }
+        this.setSalary = function(input){
+            salary = input;
+        }
+        this.getSalary = function(){
+            return salary;
+        }
+    }
+</script>

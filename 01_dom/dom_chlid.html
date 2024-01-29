@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <!-- this the lastElementChild -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+    <script>
+        const day = document.querySelector('.parent');
+        // console.log(day); 
+        // console.log(day.firstElementChild);
+        // console.log(day.lastElementChild);
+
+        const dayOne = document.querySelector('.day');
+        // console.log(dayOne);
+        // console.log(dayOne.parentElement);
+        // console.log(dayOne.nextElementSibling);
+
+        // console.log(day.childNodes);
+        for (let i = 0; i < day.children.innerHTML; i++) {
+            console.log(i.innerHTML);
+        }
+
+    </script>
+</body>
+</html>

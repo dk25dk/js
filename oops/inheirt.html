@@ -1,0 +1,37 @@
+<script>
+
+     //by using class
+    class person{
+        talk(){
+            return 'taking'
+        }
+    }
+    const me = new person();
+    const p = new person()
+    console.log(me.talk());
+
+    class people extends person{
+        fly(){
+            return 'flyyyy'
+        }
+    }
+    const you = new people();
+    console.log(you.fly());
+    console.log(you.talk());
+    console.log(me.talk());
+    console.log(me.fly());
+</script>
+<script>
+
+    // by using object
+    const student = {
+        task(){
+            return 'doing task'
+        },
+        walk(){
+            return 'walking'
+        }
+    }
+    const me1 = Object.create(student);
+    console.log(me.walk());
+</script>

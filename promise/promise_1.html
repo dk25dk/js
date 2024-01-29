@@ -1,0 +1,48 @@
+<script>
+ function addition(a,b){
+    //we can the parameter name
+    //reslove = access
+    //reject - error
+
+
+    return new Promise(function(reslove , reject){
+        let res = a+b;
+
+        setTimeout(function(){
+          reslove(res)
+        },3000)
+    })
+ }
+ addition(33,67).then(function(input){
+   console.log(`input value ${input}`);
+ })
+
+</script>
+
+<!-- <script>
+    function subtarct(a,b){
+        return new Promise(function(reslove,reject){
+            let subt = a-b;
+            setTimeout(function(){
+                reslove(subt);
+            },4000)
+        })
+    }
+    subtarct(33,45).then(function(input){
+        console.log(`input value ${input}`);
+    })
+</script> -->
+
+<!-- <script>
+    function multiply(a, b) {
+        return new Promise(function (reslove, reject) {
+            let multi = a * b;
+            setTimeout(function () {
+                reslove(multi);
+            }, 1000)
+        })
+    }
+    multiply(12, 5).then(function (input) {
+        console.log(`the value is ${input}`);
+    })
+</script> -->

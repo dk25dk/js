@@ -1,0 +1,33 @@
+<script>
+    class student{
+        task(){
+            console.log("I am a student");
+        }
+    }
+    const student1 = new student();
+    const student2 = new student();
+    student1.task();
+    student2.task();
+
+     // To update the function for both instance you only have to do it once.
+
+     // Ineritance using a constructor function
+     student.prototype.task = function(){
+        console.log("I want to improve my english");
+     }
+
+     console.log(student1.task());
+
+
+    //  function person() {};
+    //  person.prototype.test = function(){
+    //     console.log("I am walking");
+    //  }
+        
+     
+    //  const student1 = new person();
+    //  const student2 = new person();
+    //  student1.test();
+    //  student2.test()
+
+</script>

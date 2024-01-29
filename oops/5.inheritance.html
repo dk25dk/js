@@ -1,0 +1,21 @@
+<script>
+    class Employee{
+        constructor(name , age){
+            this.name = name;
+            this.age = age;
+        }
+    }
+    class foodToken extends Employee{
+        constructor(name, age, amount , eligible){
+            super(name, age);
+            this.amount = amount;
+            this.eligible = eligible;
+        }
+        getFoodUpdates(){
+            return this.name;
+        }
+    }
+    let myFoodToken = new foodToken("Dilip" , 28 , 400 , true);
+     console.log(myFoodToken);
+     console.log(myFoodToken.getFoodUpdates());
+</script>

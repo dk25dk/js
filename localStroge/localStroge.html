@@ -1,0 +1,16 @@
+<!-- <script>
+    let list = [{ firstName: "Dilip", age: 33 }, { firstName: "John", age: 28 }];
+    localStorage.setItem("movies", JSON.stringify(list));
+
+    let data = JSON.parse(localStorage.getItem("movies"));
+    console.log(data[1]);
+</script> -->
+<script>
+    let key = prompt("Entr key  you want to set")
+    let value = prompt("Entr value  you want to set")
+
+    localStorage.setItem(key, value);
+
+    console.log(`the value and ${key} is  ${localStorage.getItem(key)}`);
+
+</script>

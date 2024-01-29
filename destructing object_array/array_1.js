@@ -32,14 +32,16 @@ const myArray = [1,2,3,4,5,6,];
 
 
 
- const arry1 = myArray.splice(1,3);
- console.log("arry ",arry1)
- console.log("my orignal value", myArray);
+//  const arry1 = myArray.splice(1,3);
+//  console.log("arry ",arry1)
+//  console.log("my orignal value", myArray);
 
 
 // const arr = [1,4,5,6,7,8,3,4,6,7]
 // console.log(arr.(10));
- 
+let list ="welcome to programming language";
+let res = list.replace("java" , "javaStrpt")
+console.log(res);
 
 
 

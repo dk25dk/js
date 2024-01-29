@@ -1,0 +1,7 @@
+two type of stroge 
+1.session
+// The sessionStroge exist only within the current browser tab another tab with  same domain will have different storage.
+
+2.localStroge
+//This data permanently will strore in the browesr
+//array and object store i stringify from and get the data during parse.

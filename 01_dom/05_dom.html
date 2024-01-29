@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body style="background-color: red;">
+    <ul class="langauge">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    //add list item travrs all the dom tree  //
+    function addlang(lang){
+        const myList = document.createElement('li');
+       myList.innerHTML = `${lang}`;
+        document.querySelector('.langauge').appendChild(myList);
+    }
+    addlang("java")
+    addlang('css')
+
+    // 2nd apperoch to add list optimisize way//
+    function addLang(lang){
+        const myList1 = document.createElement('li');
+        myList1.appendChild(document.createTextNode(lang));
+        document.querySelector(".langauge").appendChild(myList1);
+    }
+   addLang("dsa")
+   addLang("nextjs")
+
+   //Edit the list//
+    const editList = document.querySelector('li:nth-child(3)');
+    // console.log(editList);
+    const creatNewText = document.createElement('li');
+    creatNewText.textContent ="jsQeary";
+    editList.replaceWith(creatNewText);
+
+    //edit 2nd Approch //
+     const fisrtLang = document.querySelector('li:first-child');
+     fisrtLang.outerHTML = "<li>TypeScript</li>"
+   
+
+   // remove the list //
+
+   const lastLang = document.querySelector("li:last-child");
+   lastLang.remove();
+</script>
+</html>

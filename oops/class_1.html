@@ -1,0 +1,36 @@
+<script>
+    class Emply{
+        constructor(name, age){
+          this.emname = name;
+          this.age = age
+          console.log("Construct: Employee");
+        }
+        info(){
+            // if we use this methode inside childe class how can we use 
+            return 'dhwdbwd'
+        }
+        deatail(){
+            console.log("Employee Detail" + this.emname);
+        }
+    }
+    class manger extends Emply{
+        //if  we accsses parnet class we use super keyword 
+        // when we write construtr methode inside childe class
+    //    constructor(name){
+    //     super();
+    //     console.log("Constructr: Manger" + this.emname);
+    //    }
+
+    info(name , age){
+            // if we use this methode inside childe class how can we use 
+            
+            super.info()
+            console.log("Manger Name "+  this.emname + this.age);
+        }
+                
+
+    }
+    let a = new manger("dilip" , 34);
+    a.info()
+    // a.deatail();
+</script>

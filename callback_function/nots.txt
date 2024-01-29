@@ -1,0 +1,8 @@
+// what is callback fucntion
+1. any fucntion that is passed as an agrument is called a callback fucntion.
+2. A callback is a function that is to be executed after anthoer function has finished executing - hence the name "call back"
+
+1. when one function is not complet dont run 2nd fucntion.
+2. callback are a way to make sure certain code doesnt executed until other code has already finished execution
+
+

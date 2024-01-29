@@ -64,4 +64,30 @@ tempList.forEach(function(list) {
         for(let i =0; i<parent.children.length;i++){
             console.log(parent.children[i].innerHTML);
         }
-    </script>    
+    </script>   
+
+    // if we access fist child elemnt 
+    1. console.log(day.firstElementChild);
+    2.console.log(day.lastElementChild); 
+
+    // if we can acces parnet elemnt and sibling elemnt
+    1. console.log(dayOne.parentElement);
+    2. console.log(dayTwo.nextElementSibling); // we can accses sibling elemnet
+
+    if we find nodelist
+    1.console.log(day.childNodes);
+
+    //if we create new elemnet 
+      1.const divCreate= document.createElement('div');
+      console.log(divCreate);
+
+//.if we add class and id or style   
+1.divCreate.className = "sub";
+2. divCreate.id ="tittel" 
+3.divCreate.style.backgroundColor = "red";
+divCreate.style.padding = "20px";
+
+// if we add text in the elemnt
+ const addText = document.createTextNode('This is the create elemmnt');
+  divCreate.appendChild(addText);
+  document.body.appendChild(divCreate);

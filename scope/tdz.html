@@ -1,0 +1,30 @@
+<script>
+    //TDZ - Temporal dead zone
+
+    // we can Access variable before declaration it will throw error
+    function dateil() {
+        console.log(a);
+        let a = 4;
+    }
+    dateil();
+</script>
+
+<script>
+    // we can Access variable before declaration it will throw error
+    console.log(b);
+    const b = 5;
+</script>
+
+<script>
+    // here is work hositing 
+    console.log(c);
+    var c = 6;
+</script>
+
+<script>
+    // here is work hositing 
+    display();
+    function display() {
+        console.log("display");
+    }
+</script>

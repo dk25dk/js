@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="users">
+    <button onclick="onFormSubmitHnadler()">Submit</button>
+    <div id="demo"></div>
+</body>
+
+</html>
+<script>
+    function onFormSubmitHnadler() {
+        let parttn = /javascript/i; // if we use (i) it will ignore capital and small letter
+        let input = document.querySelector("#users").value;
+        let res = parttn.test(input);
+
+        if (res) {
+            document.querySelector("#demo").innerHTML = "Valid user";
+            document.querySelector("#demo").style.color = "green";
+        }
+        else {
+            document.querySelector("#demo").innerHTML = "Invaild user";
+            document.querySelector("#demo").style.color = "black";
+        }
+    }
+</script>

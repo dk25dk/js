@@ -1,0 +1,29 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="users" />
+    <button onclick="onRegexHandler()">Submit</button>
+    <div id="demo"></div>
+</body>
+
+</html>
+
+<script>
+    function onRegexHandler() {
+        let pattern = /javascript/;
+        let input = document.querySelector("#users").value
+        let res = pattern.test(input);
+        if (res) {
+            document.querySelector("#demo").innerHTML = "Valid user input";
+            document.querySelector("#demo").style.color = "green";
+        }
+        else {
+            document.querySelector("#demo").innerHTML = "Invalid user";
+            document.querySelector("#demo").style.color = "red";
+        }
+    }
+</script>

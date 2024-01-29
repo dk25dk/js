@@ -1,0 +1,26 @@
+<script>
+    let employe = {
+        fullName: "Dilip",
+        age: 29,
+        myHobbie: {
+            gym: {
+                fev: "legday",
+                sec: "chestday",
+
+            }
+        }
+    }
+    // let name = employe.fullName;
+    // let age = employe.age;
+
+
+
+    let { myHobbie } = employe; //Destructing object es6
+
+    //if we rename variable name in destructing 
+    let { fullName: name, age: myAge } = employe
+    console.log(name);
+
+
+    //    console.log(`My name is ${fullName}. My age is ${age}. My Hobbies gym and my fev Exrise ${myHobbie.gym.fev}`);
+</script>

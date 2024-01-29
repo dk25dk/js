@@ -1,0 +1,22 @@
+<Script>
+    let addition = 6; // it is globl variable we can access anywhere
+
+    function display() {
+        console.log(addition);
+        addition++;
+
+        let substrction = 3; // it is function scope we can accces only inside the function
+    }
+
+    function status() {
+        if (true) {
+            let multi = 5;// it is block scope we can not acces outside function we can only access inside the block
+            console.log(multi);
+        }
+
+    }
+    display();
+    // display();
+    // display();
+    status();
+</Script>

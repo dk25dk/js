@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crate the Elemnt</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const divCreate= document.createElement('div');
+    console.log(divCreate);
+    // divCreate.innerText= "This the create elemnt"
+    divCreate.setAttribute("class" ,"text");
+    const addText = document.createTextNode("This is the my node")
+     divCreate.appendChild(addText);
+     document.body.appendChild(divCreate);
+     divCreate.style.backgroundColor = "green";
+     divCreate.style.fontSize ="25px";
+</script>
+</html>

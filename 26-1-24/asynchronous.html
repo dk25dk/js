@@ -1,0 +1,16 @@
+<script>
+    function func1() {
+        setTimeout(() => {
+            console.log("secoed is done");
+        }, 5000)
+    }
+
+    function func() {
+        console.log("fisrt is done");
+        func1()
+        console.log("end is done");
+    }
+    func();
+
+    // allows your code to run in the background without blocking the execution of other code.
+</script>

@@ -1,0 +1,68 @@
+<!-- <script>
+    function genrateOder() {
+        let count = 0;
+        let totalOrder = " Total orders = ";
+
+        return function () {
+            count++;
+            return totalOrder + count;
+        }
+    }
+    let res = genrateOder();
+    console.log(res()); //Total orders = 1
+    console.log(res());
+</script> -->
+
+<!-- <script>
+
+    const outrFunction = (a) => {
+        let b = 10;
+        const innerFunction = () => {
+            let sum = a + b;
+            console.log(`the sum of two num . is ${sum}`)
+        }
+        innerFunction();
+    }
+    outrFunction(5);
+</script> -->
+
+<script>
+
+    function outer(b) {
+        let a = 4;
+        console.log(password);// password variable is local to the inner funtion so it wont to accessible to outside
+        function inner() {
+            let multi = a * b;
+            console.log(multi);
+            let password = "123f"
+        }
+        inner();
+
+
+        function innerTwo() {
+            let sum = a + b;
+            console.log(sum);
+
+        }
+
+        innerTwo();
+    }
+    outer(5)
+</script>
+
+<script>
+    function outerScope(a) {
+        let name = "dilip";
+        // console.log(salary);
+
+        function innerSocpe() {
+            let salary = 3000;
+            console.log(a);
+            console.log(name);
+        }
+        return innerSocpe;
+    }
+    let outside = outerScope(3);
+    outside();
+
+</script>
