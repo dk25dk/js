@@ -1,0 +1,13 @@
+<script>
+    function person() {
+        console.log("parent fucntion");
+        let a = 66;
+        return function () {
+            console.log("chlid function");
+            console.log(a);
+        }
+    }
+    let res = person();
+    // console.log(res);
+    res();
+</script>

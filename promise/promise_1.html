@@ -1,23 +1,23 @@
-<script>
- function addition(a,b){
-    //we can the parameter name
-    //reslove = access
-    //reject - error
+<!-- <script>
+    function addition(a, b) {
+        //we can the parameter name
+        //reslove = access
+        //reject - error
 
 
-    return new Promise(function(reslove , reject){
-        let res = a+b;
+        return new Promise(function (reslove, reject) {
+            let res = a + b;
 
-        setTimeout(function(){
-          reslove(res)
-        },3000)
+            setTimeout(function () {
+                reslove(res)
+            }, 3000)
+        })
+    }
+    addition(33, 67).then(function (input) {
+        console.log(`input value ${input}`);
     })
- }
- addition(33,67).then(function(input){
-   console.log(`input value ${input}`);
- })
 
-</script>
+</script> -->
 
 <!-- <script>
     function subtarct(a,b){
@@ -46,3 +46,21 @@
         console.log(`the value is ${input}`);
     })
 </script> -->
+<script>
+    function addThevalue(a, b) {
+        console.log("2");
+        return new Promise(function (reslove, reject) {
+            console.log("5");
+            let sum = a + b
+            setTimeout(() => {
+                console.log("4");
+                reslove(sum);
+            }, 4000)
+        })
+    }
+    console.log("1");
+    addThevalue(12, 5).then((res) => {
+        console.log(`the value is ${res}`);
+    })
+    console.log("3");
+</script>

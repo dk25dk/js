@@ -1,0 +1,19 @@
+<script>
+    function Student(name) {
+        this.name = name;
+    }
+    Student.prototype.marksDetails = function (input) {
+        this.marks = input;
+    }
+    Student.prototype.getdetailMarks = function () {
+        let res = `${this.name} - ${this.marks}`;
+        return res;
+    }
+    let nameDetail = new Student('dilip kumar');
+    nameDetail.marksDetails(56);
+    console.log(nameDetail.getdetailMarks());
+
+    let kumarDetail = new Student('kumar');
+    kumarDetail.marksDetails(22);
+    console.log(kumarDetail.getdetailMarks());
+</script>

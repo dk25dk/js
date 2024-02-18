@@ -1,0 +1,36 @@
+<script>
+    let num = prompt('enter the number')
+    if (num < 1) {
+        console.log(`${num} prime is not possble`);
+    }
+    var isPrime = true
+    for (let i = 2; i < num; i++) {
+        if (num % i == 0) {
+            isPrime = false;
+        }
+    }
+    if (isPrime == true) {
+        console.log(`${num} is a prime number`);
+    } else {
+        console.log(`${num} is not prime number`);
+    }
+
+</script>
+<!-- <script>
+    var number = prompt("Entr the number");
+    if (number < 1) {
+        console.log(`${number} is not prime neither composite`);
+    }
+    else if (number == 1) {
+        console.log(`prime is not ${number} possible`);
+    } else {
+        for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+                var res = `${number} is not prime number`
+            } else {
+                var res = `${number} is a prime number`
+            }
+        }
+        console.log(res);
+    }
+</script> -->

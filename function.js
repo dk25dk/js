@@ -16,16 +16,16 @@
 // },2000)
 
 
-//callback function
-// function hello() {
-//     console.log("hello");
-// }
+// callback function
+function hello() {
+    console.log("hello");
+}
 
-// function print(name,hello) {
-//     console.log(name);
-//     hello();
-// }
-// print("newton",hello);
+function print(name, hello) {
+    console.log(name);
+    hello();
+}
+hello("dilip", print);
 
 
 //arrow functions

@@ -1,0 +1,23 @@
+<script>
+    class Student {
+        constructor(name) {
+            this.name = name;
+            this.mark = [];
+        }
+        marksDisplay(input, subject) {
+            this.mark.push({ mark: input, subjectName: subject })
+        }
+        getDetailMarks() {
+            for (let obj of this.mark) {
+                console.log(obj.mark, obj.subjectName);
+            }
+            let res = `${this.name}`;
+            return res;
+        }
+
+    }
+    let nameDetail = new Student('dilip');
+    nameDetail.marksDisplay("85", "Math");
+    nameDetail.marksDisplay("92", "English");
+    console.log(nameDetail.getDetailMarks());
+</script>

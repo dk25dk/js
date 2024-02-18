@@ -1,1 +1,4 @@
 1.promise mainly we use aysn code
+
+A Promise in JavaScript is an object that represents the eventual completion or failure of an asynchronous operation,
+ allowing better organization and handling of asynchronous code.

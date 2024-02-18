@@ -1,0 +1,17 @@
+<script>
+    function Student(name) {
+        this.name = name;
+    }
+    Student.prototype.setDeital = function (input) {
+        this.mark = input
+    }
+
+    Student.prototype.getDetail = function () {
+        let res = `${this.name} - ${this.mark}`
+        return res;
+    }
+    let dilipDetails = new Student("Dilip");
+    dilipDetails.setDeital(67);
+
+    console.log(dilipDetails.getDetail()); // Dilip - 67
+</script>

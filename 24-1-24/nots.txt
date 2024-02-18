@@ -1,3 +1,3 @@
 1.what differnt between closuer and lexicl?
 2.if we not use closuer what will be senrioa?
-1. it will allow  inner function to accese the outer scope of s function
+1. it will allow  inner function to accese the outer scope of a function

@@ -1,0 +1,19 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1 id="head">1</h1>
+    <button onclick="onClikedHandler()">increment</button>
+</body>
+<script>
+    let count = 0;
+    function onClikedHandler() {
+        count++;
+        document.querySelector("#head").textContent = count;
+    }
+</script>
+
+</html>

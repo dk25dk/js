@@ -1,4 +1,10 @@
 1.await
 The await keyword is used inside the async function to wait for the asynchronous operation.
 2.async
-//There’s a special syntax to work with promises in a more comfortable fashion, called “async/await”. It’s surprisingly easy to understand and use. and await are not keywords, but they are built-in JavaScript functions. The "async" mod
+//There’s a special syntax to work with promises in a more comfortable fashion, called “async/await”. 
+It’s surprisingly easy to understand and use. and await are not keywords, but they are built-in JavaScript functions.
+ The "async" modAsync and await are keywords in JavaScript that are used to work with asynchronous code.
+
+The async keyword is used to define an asynchronous function, which will always return a promise.
+ Inside an async function, you can use the await keyword to pause the execution of the function until a promise is resolved, 
+ allowing you to write asynchronous code in a synchronous style.

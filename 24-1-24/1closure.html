@@ -26,7 +26,7 @@
     outrFunction(5);
 </script> -->
 
-<script>
+<!-- script>
 
     function outer(b) {
         let a = 4;
@@ -48,8 +48,8 @@
         innerTwo();
     }
     outer(5)
-</script>
-
+</script>< -->
+<!-- 
 <script>
     function outerScope(a) {
         let name = "dilip";
@@ -65,4 +65,17 @@
     let outside = outerScope(3);
     outside();
 
+</script> -->
+
+<script>
+    function outerState() {
+        let a = 4;
+        function inneState() {
+            console.log(a);
+        }
+        return inneState;
+
+    }
+    let outerInstance = outerState();
+    outerInstance();
 </script>
